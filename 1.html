@@ -3,15 +3,50 @@
 <head>
   <title>BUT LET'S GO ANYWAY! - what i ate in a day</title>
   <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    h1{
+      font-size:34px;
+      text-align:center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:55px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:130px;
+      margin:0;
+      padding:30px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns:140px 1fr
+    }
+    #grid ol{
+      padding-left:40px;
+    }
+    #article{
+      padding-left:100px;
+    }
+    #article h2{
+      background-color:tomato;
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">BUT LET'S GO ANYWAY!</a></h1>
-  <ol>
-    <li><a href="1.html">what i ate in a day</a></li>
-    <li><a href="2.html">opposition</a></li>
-    <li><a href="3.html">tastes in music</a></li>
-  </ol>
-  <h2 style="background-color:tomato;">what i ate in a day</h2>
-  <p><a href="https://www.samyangfoods.com/kor/brand/view.do?pageIndex=3&pageUnit=10&searchCateCd1=45&searchCateCd2=&searchNewUseYn=&seq=387" target="_blank" title="product description">spicy noodle</a> sister made. i'm in charge of the washing-up.<br><img src="noodle.jpeg" width="400"></p><p style="margin-top:40px;">dessert. do you like <strong>Fanfare?</strong><br><img src="dessert.jpeg" width="400"></p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">what i ate in a day</a></li>
+      <li><a href="2.html">opposition</a></li>
+      <li><a href="3.html">tastes in music</a></li>
+    </ol>
+    <div id="article">
+      <h2>what i ate in a day</h2>
+      <p><a href="https://www.samyangfoods.com/kor/brand/view.do?pageIndex=3&pageUnit=10&searchCateCd1=45&searchCateCd2=&searchNewUseYn=&seq=387" target="_blank" title="product description">spicy noodle</a> sister made. i'm in charge of the washing-up.<br><img src="noodle.jpeg" width="400"></p><p style="margin-top:40px;">dessert. do you like <strong>Fanfare?</strong><br><img src="dessert.jpeg" width="400"></p>
+    </div>
+  </div>  
 </body>
 </html>
